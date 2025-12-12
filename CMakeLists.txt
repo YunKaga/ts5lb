@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.7.2)
 
 set(PATCH_VERSION "1" CACHE INTERNAL "Patch version")
-set(PROJECT_VESRION 0.0.${PATCH_VERSION})
+set(PROJECT_VERSION 0.0.${PATCH_VERSION})
 
 project(physics VERSION ${PROJECT_VERSION})
 
@@ -51,7 +51,7 @@ if(WIN32)
   set(CPACK_GENERATOR "ZIP")
 elseif(UNIX)
   set(CPACK_GENERATOR "DEB")
-  set(CPACK_DEBIAN_PACKAGE_MAINTAINER "nas97 <nas97@tpu.ru>")
+  set(CPACK_DEBIAN_PACKAGE_MAINTAINER "ysv8 <ysv8@tpu.ru>")
 endif()
 
 set(CPACK_PACKAGE_VERSION_MAJOR "${PROJECT_VERSION_MAJOR}")
