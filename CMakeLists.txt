@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.7.2)
 
 set(PATCH_VERSION "1" CACHE INTERNAL "Patch version")
-set(PROJECT_VERSION 0.0.${PATCH_VERSION})
+set(PROJECT_VERSION ${PATCH_VERSION})
 
 project(physics VERSION ${PROJECT_VERSION})
 
